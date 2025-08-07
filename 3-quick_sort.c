@@ -8,12 +8,12 @@
 */
 void quick_sort(int *array, size_t size)
 {
-	size_t j = 0, piv = array[size -1], temp = 0;		/* indexes initialized*/
+	size_t j = 0, piv = array[size - 1], temp = 0;
 	int i = -1;
 	size_t m;
 /*-------------traverse l'array avec j, si j <= pivot, swap i et j -------*/
 	for (m = 0; m < size; m++)
-	{	
+	{
 		while (j < size)
 		{
 			if (array[j] <= array[piv])
