@@ -14,7 +14,7 @@ void quick_sort(int *array, size_t size)
 
 		while (j < size)
 		{
-			if (array[j] <= array[piv])
+			if (array[j] <= (int)piv)
 			{
 				i++;
 				temp = array[i];
@@ -25,8 +25,8 @@ void quick_sort(int *array, size_t size)
 			j++;
 		}
 /*--------------swap pivot et i ------------------*/
-	temp = array[i];
-	array[i] = array[piv];
+	temp = array[i + 1];
+	array[i + 1] = array[piv];
 	array[piv] = temp;
 	/* et maintenant la recursioooooon*/
 /*         |     <= piv      |     > piv      |     */
